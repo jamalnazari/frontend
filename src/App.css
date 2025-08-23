@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+ 
+  height: 100vh;
+  background: #ffffff;
+  overflow: hidden;
+  background:linear-gradient(rgb(0, 204, 255) , white);
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-top: 60px
+  
+}
+#inpElem{
+  width: 490px;
+  height: 30px;
+  border: solid 1px white;
+  box-shadow: 1px 1px 2px 2px rgb(228, 228, 228);
+  border-radius: 9px;
+  margin-top: 50px;
+}
+
+#btnElem{
+ 
+
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+#liElem {
+  width: 20%;
+  list-style-type: none;
+  display: flex;              /* متن و دکمه توی یک خط */
+  justify-content: space-between; /* فاصله‌ی خودکار بین متن و دکمه */
+  align-items: center;        /* وسط‌چین عمودی */
+  margin: 8px 0;              /* فاصله بین آیتم‌ها */
+  padding: 6px 10px;
+  border:none;     /* یه خط دور هر آیتم (اختیاری) */
+  border-radius: 10%
+}
+#addBtn{
+  height: 70px;
+  width:70px;
+  margin-right:395px ;
+  margin-top: 20px;
+  background: rgb(255, 255, 255);
+  border: none;
+  box-shadow: 1px 1px 2px 2px rgb(214, 214, 214);
+  border-radius: 50%
+  
+}
+#addBtn:hover{
+     
+     height: 75px;
+     width:75px;     
+     background: rgb(40, 40, 53);
+     color: azure;
+     transition: background 0.8s, color 0.8s , height 0.8s ,  width 0.8s;
+    }
+/* در فایل App.css یا یک فایل CSS جداگانه */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(110px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+  background:linear-gradient(rgb(0, 204, 255) , white);
+}
+#er{
+  color: rgb(139, 0, 0);
+}
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(0, 204, 255);
+  animation: move 7s linear infinite;
+}
+
+/* اندازه‌های مختلف */
+.circle.small {
+  width: 20px;
+  height: 20px;
+}
+.circle.medium {
+  width: 40px;
+  height: 40px;
+}
+.circle.large {
+  width: 70px;
+  height: 70px;
+}
+
+/* مکان و تاخیر انیمیشن برای هر کدوم */
+.circle:nth-child(1) { left: 10%; animation-delay: 1s; }
+.circle:nth-child(2) { left: 25%; animation-delay: 2s; }
+.circle:nth-child(3) { left: 50%; animation-delay: 4s; }
+.circle:nth-child(4) { left: 70%; animation-delay: 6s; }
+.circle:nth-child(5) { left: 90%; animation-delay: 8s; }
+.circle:nth-child(5) { left: 85%; animation-delay: 9s; }
+.circle:nth-child(5) { left: 95%; animation-delay: 10s; }
+
+
+/* انیمیشن حرکت */
+@keyframes move {
+  from { transform: translateY(100vh) scale(0.5); }
+  to   { transform: translateY(-10vh) scale(1.2); }
+}
