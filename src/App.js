@@ -1,8 +1,8 @@
 import './App.css';
-import {BrowserRouter as Router , Routes ,Route,Link } from "react-router-dom"
+import {BrowserRouter as Router , Routes ,Route} from "react-router-dom"
 import { Home } from './Pages/Home';
 import UsEf from './practice2.js';
-import { Contact } from './Pages/Contact';
+import { About } from './Pages/About';
 import { Nav } from './Pages/Nav.js';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
          <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/UsEf" element={<UsEf/>} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/About" element={<About />} />
           <Route path="*" element={<p>Not Found;</p>} />
 
          </Routes>

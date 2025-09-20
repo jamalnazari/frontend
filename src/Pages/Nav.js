@@ -4,7 +4,7 @@ export const Nav=()=>{
                 <nav>
           <Link to="/">Home</Link>
           <Link to="/UsEf">TodoList</Link>
-          <Link to="/contact">contact</Link>
+          <Link to="/About">About</Link>
           
         </nav>
     )
