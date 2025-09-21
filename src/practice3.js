@@ -1,40 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Axios from 'axios';
 
-function Api(){   
-  const [name, setName] = useState("");       // ورودی کاربر
-  const [result, setResult] = useState(null); // خروجی API
-
-  const change = () => {
-    Axios.get(`https://api.agify.io/?name=${name}`)
-      .then(res => setResult(res.data))
-      .catch(err => console.error(err));
-  };
-
-  return (
-    <div className="App">
-      <input 
-        placeholder='example: jamal' 
-        value={name} 
-        onChange={(e) => setName(e.target.value)} 
-      />
-      <button onClick={change}>fetch data</button>
-
-      {result && (
-        <div>
-          <p>اسم: {result.name}</p>
-          <p>سن تخمینی: {result.age}</p>
-          <p>تعداد نمونه‌ها: {result.count}</p>
-        </div>
-      )}
-    </div>
-  );
-}
-export default Api
 
 
 
-/*
+
 function App() {
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -72,4 +42,40 @@ function App() {
 }
 
 export default App;
+
+
+
+/*
+
+function Api(){   
+  const [name, setName] = useState("");       // ورودی کاربر
+  const [result, setResult] = useState(null); // خروجی API
+
+  const change = () => {
+    Axios.get(`https://api.agify.io/?name=${name}`)
+      .then(res => setResult(res.data))
+      .catch(err => console.error(err));
+  };
+
+  return (
+    <div className="App">
+      <input 
+        placeholder='example: jamal' 
+        value={name} 
+        onChange={(e) => setName(e.target.value)} 
+      />
+      <button onClick={change}>fetch data</button>
+
+      {result && (
+        <div>
+          <p>اسم: {result.name}</p>
+          <p>سن تخمینی: {result.age}</p>
+          <p>تعداد نمونه‌ها: {result.count}</p>
+        </div>
+      )}
+    </div>
+  );
+}
+export default Api
+
 */

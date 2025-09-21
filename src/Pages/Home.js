@@ -1,3 +1,5 @@
 export const Home=()=>{
-    return <p>this is Home page</p>
+    return <p>
+        <h1>ابر هوش مصنوعی</h1>
+    </p>
 }
