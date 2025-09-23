@@ -1,3 +1,53 @@
+.p2{
+ width: 300px;
+ padding-right: 30px;
+ padding-top: 24px;
+ padding-right: 53px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: 18px;
+}
+.matn1{
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  border: solid 1px rgb(247, 243, 243);
+  border-radius: 100%;
+  box-shadow: 3px 3px 3px 3px rgb(204, 201, 201);
+  background: white;
+
+}
+ .h1home{
+  margin-bottom: 390px;
+  font-size: 28px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-right: 100px;
+  width: 200px;
+ }
+ .home{
+  
+  height: fit-content;
+  display: flex;
+  direction: rtl;        /* متن فارسی درست خونده بشه */
+  text-align: right; 
+
+  background: linear-gradient(-45deg, #fdff9a23, #ecffe64f, #23abd562, #8ffbff85);
+  background-size: 400% 400%;
+  animation: gradientMove 22s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 .nav {
   width: 98%;
   height: 60px;
@@ -142,7 +192,7 @@
 .circle:nth-child(2) { left: 25%; animation-delay: 2s; }
 .circle:nth-child(3) { left: 50%; animation-delay: 4s; }
 .circle:nth-child(4) { left: 70%; animation-delay: 6s; }
-.circle:nth-child(5) { left: 90%; animation-delay: 8s; }
+.circle:nth-child(5) { left: 80%; animation-delay: 8s; }
 .circle:nth-child(5) { left: 85%; animation-delay: 9s; }
 .circle:nth-child(5) { left: 95%; animation-delay: 10s; }
 

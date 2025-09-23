@@ -43,7 +43,6 @@ import {useEffect , useState} from "react" ;
       
 
       <div className="circle medium"></div>
-       
       <div className="circle small"></div>
       <div className="circle medium"></div>
       <div className="circle large"></div>

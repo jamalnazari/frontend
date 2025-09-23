@@ -4,7 +4,7 @@ import { Home } from './Pages/Home';
 import UsEf from './practice2.js';
 import Api from './practice3.js';
 import { Nav } from './Pages/Nav.js';
-
+import {Profile} from './practice5.js'
 function App() {
   return (
     <div className="td">
@@ -16,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/UsEf" element={<UsEf/>} />
           <Route path="/api" element={<Api />} />
+          <Route path='/profile/:name/:id' element={<Profile/>}></Route>
           <Route path="*" element={<p>Not Found;</p>} />
 
          </Routes>

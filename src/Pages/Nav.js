@@ -5,6 +5,7 @@ export const Nav=()=>{
           <Link to="/">خانه </Link>
           <Link to="/UsEf">  لیست یادداشت </Link>
           <Link to="/Api" >آب وهوا </Link>
+          <Link to="profile/nazari/id">پروفایل</Link>
           
         </nav>
     )

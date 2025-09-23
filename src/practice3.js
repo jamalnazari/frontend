@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -8,6 +9,7 @@ import Axios from 'axios';
 function App() {
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(true);
+  let Navigat=useNavigate()
 
   useEffect(() => {
     fetch(
@@ -28,7 +30,9 @@ function App() {
   if (!weather) return <h2>مشکلی در دریافت اطلاعات پیش اومده</h2>;
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+
+    <React.Fragment>
+          <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h1>🌤 آب‌وهوای {weather.name}</h1>
       <h2>{weather.main.temp}°C</h2>
       <p>رطوبت: {weather.main.humidity}%</p>
@@ -38,11 +42,13 @@ function App() {
         alt="weather-icon"
       />
     </div>
+      <button onClick={()=>
+         Navigat("/")}>بازگشت به خانه</button>
+    </React.Fragment>
   );
 }
 
 export default App;
-
 
 
 /*
